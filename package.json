@@ -1,0 +1,14 @@
+{
+  "name": "htmlify",
+  "version": "0.1.0",
+  "description": "Markdown → HTML",
+  "keywords": [
+    "markdown",
+    "html",
+    "text",
+    "jsonml"
+  ],
+  "author": "Fedor Sheremetyev <sheremetyev@gmail.com>",
+  "contributors": [ 
+  ]
+}
