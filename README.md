@@ -52,10 +52,8 @@ Browsers
 
 -   Safari
 
--   Chrome[^3]
-
-    [^3]: Chrome needs `--allow-file-access-from-files` flag when HTML file with
-    dynamic conversion is open locally.
+-   Chrome (needs `--allow-file-access-from-files` flag to work with local
+    files).
 
 License
 -------
