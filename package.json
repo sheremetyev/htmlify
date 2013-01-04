@@ -12,6 +12,11 @@
   "contributors": [ 
   ],
   "dependencies": {
-    "texts": "*"
+    "texts": "*",
+    "pegjs": "*",
+    "lobrow": "*"
+  },
+  "devDependencies": {
+    "webpack": "*"
   }
 }
