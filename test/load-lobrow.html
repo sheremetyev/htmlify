@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+  </head>
+  <body>
+    <div id="container" class="container">
+      <script src="../node_modules/lobrow/lobrow.js"></script>
+      <script>
+        lobrow.globalNames['assert'] = function(value, message) {
+          if (!!!value) throw new Error(message);
+        };
+
+        lobrow.require( ['../lib/htmlify'], function(htmlify) {
+          var text = htmlify.load('../README.md');
+          var div = document.createElement('div');
+          div.innerHTML = htmlify.format(text);
+          var container = document.getElementById('container');
+          for (var i = 0; i < div.childNodes.length; i++)
+            container.appendChild(div.childNodes[i]);
+        });
+      </script>
+    </div>
+  </body>
+</html>
