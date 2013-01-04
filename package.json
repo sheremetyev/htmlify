@@ -17,6 +17,6 @@
     "lobrow": "*"
   },
   "devDependencies": {
-    "webpack": "*"
+    "webpack": "0.4.x"
   }
 }
