@@ -47,13 +47,37 @@ Dependencies
 
 Compiled script has no dependencies.
 
-Browsers
---------
+Execution Modes
+---------------
+
+1.  Execute source code in a browser, load via lobrow.
+
+2.  Execute source code in Node, load via standard require.
+
+3.  Execute webpack-compiled code in a browser.
+
+4.  Execute webpack-compiled in Node.
+
+Compilation
+-----------
+
+1.  Execute `npm update`.
+
+2.  Execute `make` (`nmake` on Windows).
+
+Compatibility
+-------------
+
+-   Node
 
 -   Safari
 
 -   Chrome (needs `--allow-file-access-from-files` flag to work with local
     files).
+
+-   Firefox
+
+-   Internet Explorer
 
 License
 -------
